@@ -24,7 +24,7 @@
 
         <section class="content">
             <h1 class="title">Popular</h1>
-            <?php include 'phpscript/categorysql.php'; ?>
+<?php include 'phpscript/categorysql.php'; ?>
             <p></p>
 
 

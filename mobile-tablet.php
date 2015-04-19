@@ -7,7 +7,7 @@
 
     <head>
         <link rel="shortcut icon" href="img/favicon.ico">
-        <title>TECH - Hardware</title>
+        <title>TECH - Mobile/Tablet</title>
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
         <link rel="stylesheet" href="StyleSheet.css">
 
@@ -16,13 +16,13 @@
 
     <body>
         <header>
-            <?php
+           <?php
                 include 'nav.php';
             ?>
         </header>
 
         <section class="content">
-            <h1 class="title">Hardware</h1>
+            <h1 class="title">Mobile/Tablet</h1>
 <?php include 'phpscript/categorysql.php'; ?>
             <p></p>
 

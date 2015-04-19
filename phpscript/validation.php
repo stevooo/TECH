@@ -16,8 +16,15 @@ if ($_POST) {
     $tvs = $_POST['tvs'];
     $gaming = $_POST['gaming'];
     $socialmedia = $_POST['socialmedia'];
-
     
+    $conn = pg_connect("host=db.dcs.aber.ac.uk dbname=cs399_14_15_stm26 user=stm26 password=stephen19");
+    $sql = "SELECT * FROM users WHERE email ='$email'";
+    $res = pg_query($conn,$sql);
+    $rows = pg_num_rows($res);
+    if ($rows > 0){
+       header("Location: http://users.aber.ac.uk/stm26/TECH/signup.php?emailinvalid=True"); 
+    }
+    else{
     if ($popular === 'True') {
         
     } else {
@@ -73,5 +80,6 @@ if ($_POST) {
         $result = pg_query($query);
         header("Location: http://users.aber.ac.uk/stm26/TECH/index.php");
    
+}
 }
 ?>

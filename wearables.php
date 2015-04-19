@@ -25,6 +25,7 @@
         <section class="content">
             <h1 class="title">Wearables</h1>
 <?php include 'phpscript/categorysql.php'; ?>
+            
             <p></p>
 
 

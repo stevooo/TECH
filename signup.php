@@ -18,6 +18,10 @@ session_start();
     <body>
         <header>
             <?php
+            $emailinvalid = False;
+            if(isset($_GET["emailinvalid"])){
+               $emailinvalid = True; 
+            }
             include 'nav.php';
             ?>
         </header>
@@ -37,14 +41,17 @@ session_start();
                     <p class="indent"><u>Share Your Opinion</u></p>
                     <p class="indent">By creating a TECH account you will be able to comment on stories so you can share your view with other TECH users.</p>
                 </section>
-                <?php include 'phpscript/validation.php';
-                ?>
-                <form method="post" action="validation.php" name="register">
+                
+                <form method="post" action="phpscript/validation.php" name="register">
                     <p class="form">First Name:* <input type="text" name="firstname" class="rounded" required></p>
                     
                     <p class="form">Last Name:* <input type="text" name="lastname" class="rounded" required></p>
                     
                     <p class="form">Email:* <input type="email" name="email" class="rounded" required placeholder="e.g. johndoe@email.co.uk"></p>
+                    <?php if($emailinvalid == True){
+                        echo "<p class='note'>Email address already linked to a TECH account.</p>";
+                    }
+                    ?>
                     
                     <p class="form">Password:* <input type="password" name="password" class="rounded" required> </p>
                    

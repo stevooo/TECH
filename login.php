@@ -30,6 +30,7 @@ session_start();
                 <form name="login" method="post" action="./login.php">
                     <p class="form">Email: <input name="email" type="text" class="rounded" id="email"></p>
                     <p class="form">Password: <input name="password" type="password" class="rounded" id="password"></p>
+                    <p>Forgotten your password? <a href="forgotpassword.php" class="normal_link">Reset password</a></p>
                     <?php 
                     include 'phpscript/checklogin.php';
                     ?>

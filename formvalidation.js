@@ -85,3 +85,24 @@ function commentvalidate(form){
     };
     
 }
+
+function checkemail(form){
+    form.onsubmit = function() {
+        
+        
+        if (form.elements['email'].value.length == 0) {
+            alert("You have not entered an email address");
+            return false;
+        } else {
+            if (!val_email.test(form.elements['email'].value)) {
+                alert("You have not entered a valid email address");
+                return false;
+            }
+        }
+
+        
+        return true;
+    };
+    
+}
+
