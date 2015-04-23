@@ -55,7 +55,7 @@
                 <br>
                 <hr>
                 <br>
-                <form action="./phpscript/changedetails.php">
+                <form action="./changedetails.php">
                 <input type="submit" value="Change Details" class="submit">
                 </form>
             </section>

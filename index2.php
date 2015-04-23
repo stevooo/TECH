@@ -30,34 +30,11 @@ session_start();
         	auto: false,
 			speed: 10
 		});
-                $("#scroller4").simplyScroll({
-        	auto: false,
-			speed: 10
-		});
-                $("#scroller5").simplyScroll({
-        	auto: false,
-			speed: 10
-		});
-                $("#scroller6").simplyScroll({
-        	auto: false,
-			speed: 10
-		});
-                $("#scroller7").simplyScroll({
-        	auto: false,
-			speed: 10
-		});
-                $("#scroller8").simplyScroll({
-        	auto: false,
-			speed: 10
-		});
-                $("#scroller9").simplyScroll({
-        	auto: false,
-			speed: 10
-		});
             });
         })(jQuery);
-
-         //var __st_loadLate = true; //if __st_loadLate is defined then the widget will not load on domeady
+        </script>`
+        <script type="text/javascript">
+            var __st_loadLate = true; //if __st_loadLate is defined then the widget will not load on domcontent ready
         </script>
 
         <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
@@ -77,7 +54,7 @@ session_start();
             <br>
             <?php
             if (isset($_SESSION['email'])) {
-                echo"<h1 class='title'>Personalised Technology News Homepage</h1>";
+                echo"<h1 class='recent'>Personalised Technology News Homepage</h1>";
                 include 'phpscript/personalisedhomepage.php';
                 
             } else {
@@ -86,7 +63,7 @@ session_start();
                 
                 echo"<a href='categorypage.php?category=mobileTablet&name=Mobile/Tablet'><h1 class='recent'>Mobile\Tablet</h1></a>";
                 echo "<ul id='scroller'>";
-                include 'phpscript/mainpagemobile-tablet.php';
+                include 'phpscript/mainpagemobile-tablet2.php';
                 echo "</ul>";
                 
                 echo"<a href='categorypage.php?category=business&name=Business'><h1 class='recent'>Business</h1></a>";

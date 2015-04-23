@@ -12,15 +12,15 @@ echo" <a href='index.php' >
                     <li><a href='index.php'>Home</a></li>
                     <li><a href='#'>Categories&#9662</a>
                         <ul class='categories'>
-                            <li class='submenu'><a href='popular.php?category=popular'>Popular</a></li>
-                            <li class='submenu'><a href='mobile-tablet.php?category=mobileTablet'>Mobile/Tablet</a></li>
-                            <li class='submenu'><a href='business.php?category=business'>Business</a></li>
-                            <li class='submenu'><a href='hardware.php?category=hardware'>Hardware</a></li>
-                            <li class='submenu'><a href='software.php?category=software'>Software</a></li>
-                            <li class='submenu'><a href='wearables.php?category=wearables'>Wearables</a></li>
-                            <li class='submenu'><a href='tvs.php?category=tvs'>TVs</a></li>
-                            <li class='submenu'><a href='gaming.php?category=gaming'>Gaming</a></li>
-                            <li class='submenu'><a href='socialmedia.php?category=socialMedia'>Social Media</a></li>
+                            <li class='submenu'><a href='categorypage.php?category=popular&name=Popular'>Popular</a></li>
+                            <li class='submenu'><a href='categorypage.php?category=mobileTablet&name=Mobile/Tablet'>Mobile/Tablet</a></li>
+                            <li class='submenu'><a href='categorypage.php?category=business&name=Business'>Business</a></li>
+                            <li class='submenu'><a href='categorypage.php?category=hardware&name=Hardware'>Hardware</a></li>
+                            <li class='submenu'><a href='categorypage.php?category=software&name=Software'>Software</a></li>
+                            <li class='submenu'><a href='categorypage.php?category=wearables&name=Wearables'>Wearables</a></li>
+                            <li class='submenu'><a href='categorypage.php?category=tvs&name=TV'>TV</a></li>
+                            <li class='submenu'><a href='categorypage.php?category=gaming&name=Gaming'>Gaming</a></li>
+                            <li class='submenu'><a href='categorypage.php?category=socialMedia&name=Social Media'>Social Media</a></li>
                         </ul>           
                     </li>
                     <li><a href='about.php'>About</a></li>

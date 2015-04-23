@@ -26,17 +26,17 @@ session_start();
                 <br>
                 <br>
                 <img id="profilepicture" class="pro-pic" src="img/me1.jpg" alt="stephen mcfarlane" />
+                <p>TECH is a technology news website created to be a one stop website for- all technology news, the stories on TECH are from other news websites such as BBC News technology, Skynews and Techradar.
+                   The purpose of this website is so you don't have to view multiple websites to find interesting technology news. 
+                   A benefit of TECH is you can create an account to build your own personal technology news home page by setting preferences on what type of technology you like to read.
+                </p>
                 <p>
-                    TECH is a website created to be the center of technology news online as all of the stories on TECH are
-                    from reputable sources such as BBC News Technology, Tech Radar and others. The reason behind the creation
-                    of TECH is to house the most recent and interesting technology news, so you don't have to go through multiple
-                    websites to read up about technology.
+                   
                 </p>
 
                 <p>
-                    TECH was created by Stephen McFarlane as his final year project for his Internet programming and service
-                    administration course at Aberystwyth University. It was created because of his fascination with technology
-                    and so it was easier to read about it.
+                    TECH was created by Stephen McFarlane as his final year web-based project for his Internet programming and service administration course at Aberystwyth University.
+                    It was created because of his fascination with reading about technology and he liked the idea of having stories from multiple websites in one place.
                 </p>
 
             </section>

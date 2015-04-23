@@ -1,5 +1,6 @@
 <?
     session_start();
+    $page = $_GET["name"]
 ?>
 <!doctype html>
 
@@ -7,7 +8,7 @@
 
     <head>
         <link rel="shortcut icon" href="img/favicon.ico">
-        <title>TECH - Gaming</title>
+        <title>TECH - <?php echo $page; ?></title>
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
         <link rel="stylesheet" href="StyleSheet.css">
 
@@ -22,8 +23,8 @@
         </header>
 
         <section class="content">
-            <h1 class="title">Gaming</h1>
-<?php include 'phpscript/categorysql.php'; ?>
+            <h1 class="title"><?php echo $page; ?></h1>
+            <?php include 'phpscript/categorysql.php'; ?>
             <p></p>
 
 

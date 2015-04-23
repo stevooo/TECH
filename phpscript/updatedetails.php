@@ -2,11 +2,15 @@
 $id = $_GET["checkid"] ;
 if ($_POST) {
     $firstname = $_POST['firstname'];
+    $firstname2 = pg_escape_string($firstname);
     $lastname = $_POST['lastname'];
+    $lastname2 = pg_escape_string($lastname);
     $email = $_POST['email'];
+    $email2 = pg_escape_string($email);
     $password = $_POST['password'];
-    $confirmpassword = $_POST['confirmpassword'];
+    $password_hash = crypt($_POST['password'], '$2a$07$usesomesillystringforsalt$');
     $country = $_POST['country'];
+    $country2 = pg_escape_string($country);
     $popular = $_POST['popular'];
     $mobiletablet = $_POST['mobile/tablet'];
     $business = $_POST['business'];
@@ -68,7 +72,7 @@ if ($_POST) {
 
    
         $db = pg_connect("host=db.dcs.aber.ac.uk dbname=cs399_14_15_stm26 user=stm26 password=stephen19");
-        $query = "UPDATE users SET email='$email',password='$password',firstname='$firstname',lastname='$lastname',country='$country',popular='$popular',mobiletablet='$mobiletablet',business='$business',hardware='$hardware',software='$software',wearables='$wearables',tvs='$tvs',gaming='$gaming',socialmedia='$socialmedia' 
+        $query = "UPDATE users SET email='$email2',password='$password_hash',firstname='$firstname2',lastname='$lastname2',country='$country2',popular='$popular',mobiletablet='$mobiletablet',business='$business',hardware='$hardware',software='$software',wearables='$wearables',tvs='$tvs',gaming='$gaming',socialmedia='$socialmedia' 
                 WHERE userid='$id'";
         $result = pg_query($query);
         header("Location: http://users.aber.ac.uk/stm26/TECH/index.php");

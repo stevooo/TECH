@@ -64,17 +64,17 @@ session_start();
                     <br>
                     <hr>
                     <h2>Preferences</h2><p>(Can be set or changed later in the manage account page.)</p>
-                    <p class="check"><input type="checkbox" name="popular" value="True" checked="checked">Popular</p>
-                    <p class="check"><input type="checkbox" name="mobile/tablet" value="True">Mobile/Tablet</p> 
-                    <p class="check"><input type="checkbox" name="business" value="True">Business</p>
+                    <p class="check"><input class="check2" type="checkbox" name="popular" value="True" checked="checked">Popular</p>
+                    <p class="check"><input class="check2" type="checkbox" name="mobile/tablet" value="True">Mobile/Tablet</p> 
+                    <p class="check"><input class="check2" type="checkbox" name="business" value="True">Business</p>
                     <br> 
-                    <p class="check"><input type="checkbox" name="hardware" value="True">Hardware</p> 
-                    <p class="check"><input type="checkbox" name="software" value="True">Software</p> 
-                    <p class="check"><input type="checkbox" name="wearables" value="True">Wearables</p>
+                    <p class="check"><input class="check2" type="checkbox" name="hardware" value="True">Hardware</p> 
+                    <p class="check"><input class="check2" type="checkbox" name="software" value="True">Software</p> 
+                    <p class="check"><input class="check2" type="checkbox" name="wearables" value="True">Wearables</p>
                     <br>
-                    <p class="check"><input type="checkbox" name="tvs" value="True">TVs</p> 
-                    <p class="check"><input type="checkbox" name="gaming" value="True">Gaming</p> 
-                    <p class="check"><input type="checkbox" name="socialmedia" value="True">Social Media</p>
+                    <p class="check"><input class="check2" type="checkbox" name="tvs" value="True">TVs</p> 
+                    <p class="check"><input class="check2" type="checkbox" name="gaming" value="True">Gaming</p> 
+                    <p class="check"><input class="check2" type="checkbox" name="socialmedia" value="True">Social Media</p>
                     <br>
                     <br>
                     <hr>

@@ -48,17 +48,17 @@
                 <br>
                 <hr>
                 <h2>Preferences</h2>
-                <p class="check"><input type="checkbox" name="popular" value="True" <?php if($popular == 't'){ echo "checked='checked'";} ?>>Popular</p>
-                <p class="check"><input type="checkbox" name="mobile/tablet" value="True" <?php if($mobiletablet == 't'){ echo "checked='checked'";} ?>>Mobile/Tablet</p> 
-                <p class="check"><input type="checkbox" name="business" value="True" <?php if($business == 't'){ echo "checked='checked'";} ?>>Business</p>
+                <p class="check"><input class="check2" type="checkbox" name="popular" value="True" <?php if($popular == 't'){ echo "checked='checked'";} ?>>Popular</p>
+                <p class="check"><input class="check2" type="checkbox" name="mobile/tablet" value="True" <?php if($mobiletablet == 't'){ echo "checked='checked'";} ?>>Mobile/Tablet</p> 
+                <p class="check"><input class="check2" type="checkbox" name="business" value="True" <?php if($business == 't'){ echo "checked='checked'";} ?>>Business</p>
                 <br> 
-                <p class="check"><input type="checkbox" name="hardware" value="True" <?php if($hardware == 't'){ echo "checked='checked'";} ?>>Hardware</p> 
-                <p class="check"><input type="checkbox" name="software" value="True" <?php if($software == 't'){ echo "checked='checked'";} ?>>Software</p> 
-                <p class="check"><input type="checkbox" name="wearables" value="True" <?php if($wearables == 't'){ echo "checked='checked'";}?>>Wearables</p>
+                <p class="check"><input class="check2" type="checkbox" name="hardware" value="True" <?php if($hardware == 't'){ echo "checked='checked'";} ?>>Hardware</p> 
+                <p class="check"><input class="check2" type="checkbox" name="software" value="True" <?php if($software == 't'){ echo "checked='checked'";} ?>>Software</p> 
+                <p class="check"><input class="check2" type="checkbox" name="wearables" value="True" <?php if($wearables == 't'){ echo "checked='checked'";}?>>Wearables</p>
                 <br>
-                <p class="check"><input type="checkbox" name="tvs" value="True" <?php if($tvs == 't'){ echo "checked='checked'";}?>>TVs</p> 
-                <p class="check"><input type="checkbox" name="gaming" value="True" <?php if($gaming == 't'){ echo "checked='checked'";} ?>>Gaming</p> 
-                <p class="check"><input type="checkbox" name="socialmedia" value="True" <?php if($socialmedia == 't'){ echo "checked='checked'";} ?>>Social Media</p>
+                <p class="check"><input class="check2" type="checkbox" name="tvs" value="True" <?php if($tvs == 't'){ echo "checked='checked'";}?>>TVs</p> 
+                <p class="check"><input class="check2" type="checkbox" name="gaming" value="True" <?php if($gaming == 't'){ echo "checked='checked'";} ?>>Gaming</p> 
+                <p class="check"><input class="check2" type="checkbox" name="socialmedia" value="True" <?php if($socialmedia == 't'){ echo "checked='checked'";} ?>>Social Media</p>
                 <br>
                 <br>
                 <hr>

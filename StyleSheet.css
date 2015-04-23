@@ -9,7 +9,7 @@ body {
     line-height: 1.25em;
     font-weight:300;
     background: #FFF;
-    color: #555;
+    color: #1A1A1A;
     min-width: 800px;
 }
 html{
@@ -68,35 +68,56 @@ header {
     height: auto;
     border: 1px solid black;
     margin: 10px 20px 10px 10px;
-    
+
 }
 .headline{
     position: absolute;
-    color: #555;
-    
+    color: #1A1A1A;
+
 }
 .storycontent{
-  margin: 10px;
+    margin: 10px;
 }
 .storyLink{
     width: 30%;
     margin: 20px auto 60px;
     margin-left: 1.66%;
     margin-right: 1.66%;
-    height:300px;
+    height :300px;
     display: inline-block;
-    
     text-align: left;
 }
 .categorystorylink{
     width: 20%;
-    margin: 0px auto 10px;
+    margin: 0px auto 0px;
     margin-left: 2.5%;
     margin-right: 2.5%;
-    height:300px;
+    height: 300px;
     display: inline-block;
+
+    text-align: left;
+}
+.categorystorylink2{
+    width: 100%;
+    height: 270px;
+    margin: 0px auto 10px;
+    margin-left: 2.5%;
+    margin-right:2.5%;
+    display: inline-block;
+
+    text-align: left;
+}
+.categorystorylink2 img{
+border: 1px solid black;
+height: 60%;
+}
+#scroller{
     
-    text-align: left; 
+    
+}
+.scrollbar{
+    width: 100%;
+    height: 275px;
 }
 nav {
     float: right;
@@ -195,10 +216,10 @@ h1 {
 }
 h2 {
     font-size: 1.2em;
-    margin-bottom: 10px;
+
 }
 h3{
-   text-align: left;
+    text-align: left;
 }
 p {
     line-height: 1.45em;
@@ -217,6 +238,7 @@ p {
     font-size: 2em;
     color: #555;
     line-height: 1.15em;
+    max-width: 300px;
 }
 .about{
     max-width: 1100px;
@@ -226,7 +248,7 @@ p {
     border: 1px solid black;
     height: auto;
     margin: 5px auto 30px;
-    
+
 }
 .info{
     float: right;
@@ -298,7 +320,7 @@ footer{
 input.rounded {
     width: 50%;
     float: right;
-    border: 1px solid #ccc;
+    border: 1px solid #000;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     border-radius: 10px;
@@ -313,16 +335,16 @@ input.rounded {
 input.rounded:focus {
     border-color: #339933;
 }
- input:required:invalid, input:focus:invalid {
-     background-image: url(img/invalid.png);
-     background-position: right top;
-     background-repeat: no-repeat;
- }
- input:required:valid {
-     background-image: url(img/valid.png);
-     background-position: right top;
-     background-repeat: no-repeat; 
- }
+input:required:invalid, input:focus:invalid {
+    background-image: url(img/invalid.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+input:required:valid {
+    background-image: url(img/valid.png);
+    background-position: right top;
+    background-repeat: no-repeat; 
+}
 .form{
     width:55%;  
 }
@@ -336,7 +358,7 @@ input.rounded:focus {
     margin-top: 5px;
 }
 .submit {
-    
+
     text-align:center;
     border: 1px solid #ccc;
     -moz-border-radius: 10px;
@@ -377,6 +399,19 @@ input.rounded:focus {
     display: block;
     float: left;
 }
+input[type=checkbox]{
+    /* Double-sized Checkboxes */
+    -ms-transform: scale(2); /* IE */
+    -moz-transform: scale(2); /* FF */
+    -webkit-transform: scale(2); /* Safari and Chrome */
+    -o-transform: scale(2); /* Opera */
+    padding: 10px;
+}
+input.check2 {           
+    font-size: 110%;
+    display: inline;
+     margin-right:10px;
+}
 .terms{
     width: 50%;
 }
@@ -399,7 +434,7 @@ input.rounded:focus {
     margin-left:20px;
 }
 .storycontent img{
-  width: 50%;
+    width: 50%;
     height:auto;
 }
 @media screen and (min-width: 1401px) and (max-width: 1600px) {
@@ -423,6 +458,10 @@ input.rounded:focus {
 
         text-align: left; 
     }
+    .categorystorylink2 img{
+    border: 1px solid black;
+    height: 50%;
+}
 }
 @media screen and (min-width: 1201px) and (max-width: 1400px) {
     .storyLink{
@@ -445,6 +484,10 @@ input.rounded:focus {
 
         text-align: left; 
     }
+    .categorystorylink2 img{
+    border: 1px solid black;
+    height: 50%;
+}
 }
 @media screen and (min-width: 1001px) and (max-width: 1200px) {
     .storyLink{
@@ -467,6 +510,10 @@ input.rounded:focus {
 
         text-align: left; 
     }
+    .categorystorylink2 img{
+    border: 1px solid black;
+    height: 40%;
+    }       
 }
 @media screen and (min-width: 801px) and (max-width: 1000px) {
     .storyLink{
@@ -495,10 +542,14 @@ input.rounded:focus {
         border: 1px solid black;
         top: 0;
     }
+    .categorystorylink2 img{
+    border: 1px solid black;
+    height: 30%;
+}
 }
 @media screen and (min-width: 321px) and (max-width: 800px) {
     nav li ul{
-    font-size: 40px;
+        font-size: 40px;
     }
     .storyLink{
         width: 30%;
@@ -526,10 +577,15 @@ input.rounded:focus {
         border: 1px solid black;
         top: 0;
     }
+    .categorystorylink2 img{
+border: 1px solid black;
+height: 30%;
+}
 }
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 480px) {
+    
     .storyimg{
         width: 100%;
         height: 70%;
@@ -573,7 +629,7 @@ and (max-device-width : 480px) {
         color: #555;
         min-width: 320px;
         margin-top: 20px;
-        }
+    }
     header {
         background: #000;
         width: 100%;
@@ -590,10 +646,10 @@ and (max-device-width : 480px) {
         float: left;
         height:95px;
         width:332px;
-        
+
     }
     nav {
-        
+
         padding: 35px 10px 15px 0px;
     }
     nav li ul{
@@ -668,18 +724,18 @@ and (max-device-width : 480px) {
         height: auto;
     }
     h2 {
-    font-size: 1em;
-    margin-bottom: 15px;
+        font-size: 1em;
+        margin-bottom: 15px;
     }
     .headline{
-    position: absolute;
-    color: #555;
-    line-height: 1.2em;
-    font-size: 26px;
+        position: absolute;
+        color: #555;
+        line-height: 1.2em;
+        font-size: 26px;
     }
     .title{
-    text-align:left;
-    padding-top:50px;
+        text-align:left;
+        padding-top:50px;
     }
-   
+
 }

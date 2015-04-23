@@ -2,11 +2,15 @@
 
 if ($_POST) {
     $firstname = $_POST['firstname'];
+    $firstname2 = pg_escape_string($firstname);
     $lastname = $_POST['lastname'];
+    $lastname2 = pg_escape_string($lastname);
     $email = $_POST['email'];
+    $email2 = pg_escape_string($email);
     $password = $_POST['password'];
     $password_hash = crypt($_POST['password'], '$2a$07$usesomesillystringforsalt$');
     $country = $_POST['country'];
+    $country2 = pg_escape_string($country);
     $popular = $_POST['popular'];
     $mobiletablet = $_POST['mobile/tablet'];
     $business = $_POST['business'];
@@ -18,7 +22,7 @@ if ($_POST) {
     $socialmedia = $_POST['socialmedia'];
     
     $conn = pg_connect("host=db.dcs.aber.ac.uk dbname=cs399_14_15_stm26 user=stm26 password=stephen19");
-    $sql = "SELECT * FROM users WHERE email ='$email'";
+    $sql = "SELECT * FROM users WHERE email ='$email2'";
     $res = pg_query($conn,$sql);
     $rows = pg_num_rows($res);
     if ($rows > 0){
@@ -76,7 +80,7 @@ if ($_POST) {
    
         $db = pg_connect("host=db.dcs.aber.ac.uk dbname=cs399_14_15_stm26 user=stm26 password=stephen19");
         $query = "INSERT INTO users (email,password,firstname,lastname,country,popular,mobiletablet,business,hardware,software,wearables,tvs,gaming,socialmedia) 
-                VALUES ('$email','$password_hash','$firstname','$lastname','$country','$popular','$mobiletablet','$business','$hardware','$software','$wearables','$tvs','$gaming','$socialmedia')";
+                VALUES ('$email2','$password_hash','$firstname2','$lastname2','$country2','$popular','$mobiletablet','$business','$hardware','$software','$wearables','$tvs','$gaming','$socialmedia')";
         $result = pg_query($query);
         header("Location: http://users.aber.ac.uk/stm26/TECH/index.php");
    

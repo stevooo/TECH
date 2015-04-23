@@ -12,9 +12,11 @@ while($g = pg_fetch_array($userres2)){
 if ($_POST){
     
     $comment = $_POST['comment'];
+    $comment2 = pg_escape_string($comment2);
     $id = $_GET["storyID"] ;
+    $id2 = pg_escape_string($id);
     $comquery = "INSERT INTO comments (storyid,userid,commentcontent) 
-              VALUES ('$id','$userid','$comment')";
+              VALUES ('$id2','$userid','$comment2')";
     $commentresult = pg_query($conn,$comquery);
     header("Location: http://users.aber.ac.uk/stm26/TECH/");
 }

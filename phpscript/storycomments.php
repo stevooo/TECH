@@ -6,7 +6,7 @@ $res2 = pg_query($conn,$sql2);
 //$userres = pg_query($conn,$usersql);
 
 if(isset($_SESSION['email'])){
-        echo "<form method='post' action='addcomment.php?storyID=".$id."' name='comment'>
+        echo "<form method='post' action='phpscript/addcomment.php?storyID=".$id."' name='comment'>
     <p class='comment'>Write your comment here: </p>
     <textarea name='comment' id='comment' class='commentform' placeholder='max 1000 characters'></textarea>
     <input name='submit' type='submit' value='Post' class='submitcomment'> <hr>";

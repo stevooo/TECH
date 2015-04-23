@@ -42,12 +42,12 @@ session_start();
                         echo "<p class='note'>Email does not link to nay TECH account</p>";
                         echo "<p>Don't have a TECH account? then <a href='signup.php' class='normal_link'>Sign-up</a></p>";
                     }
-                    if($$passwordchanged == True){
+                    if($passwordchanged == True){
                         echo "<p>Your password has been changed please check your emails for a temporary password.</p>";
                     }
                     ?>
                     
-                    <input type="submit" name="Submit" value="Login" class="submit">
+                    <input type="submit" name="Submit" value="Submit" class="submit">
                 </form>
                 <script type="text/javascript">
                     <!--
