@@ -7,9 +7,15 @@ $res = pg_query($conn,$sql);
 while($a = pg_fetch_array($res)){
     
     echo "<section class='storyLink'>";
+	$image = str_replace("{","",$a['image']);
+	$image2 = str_replace("}","",$image);
+	$headline = str_replace('{"',"",$a['headline']);
+	$headline2 = str_replace('"}',"",$headline);
+        $headline3 = str_replace("\u2019",'&#8217', $headline2);
+        $headline4 = str_replace("’",'&rsquo;', $headline3);
     echo "<a href='http://users.aber.ac.uk/stm26/TECH/story.php?storyID=".$a['storyid']."'>
-          <img class='storyimg' id='".$a['storyid']."' src='".$a['image']."'/></a>";
-    echo "<h2><a class='headline' href='http://users.aber.ac.uk/stm26/TECH/story.php?storyID=".$a['storyid']."'>".$a['headline']."</a></h2>";
+          <img class='storyimg' id='".$a['storyid']."' src='".$image2."'/></a>";
+    echo "<h2><a class='headline' href='http://users.aber.ac.uk/stm26/TECH/story.php?storyID=".$a['storyid']."'>".$headline4."</a></h2>";
     echo "</section>";
 }
 ?>

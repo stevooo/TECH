@@ -72,29 +72,32 @@ session_start();
         </header>
 
         <section class="content">
-            <?php include 'phpscript/homesharebuttons.php'; ?>
-            <h1 class="title">Welcome to Tech the No.1 website for all technology news.</h1>
-            <br>
+            <?php include 'phpscript/homesharebuttons.php'; 
+            if (!isset($_SESSION['email'])) {
+           echo" <h1 class='title'>Welcome to Tech the No.1 website for all technology news.</h1>";
+            }
+            ?>
+           <br>
             <?php
             if (isset($_SESSION['email'])) {
-                echo"<h1 class='title'>Personalised Technology News Homepage</h1>";
+                echo"<h1 class='title'>".$_SESSION['firstname']."'s Technology News Homepage</h1>";
                 include 'phpscript/personalisedhomepage.php';
                 
             } else {
                 echo"<h1 class='recent'>Recent News</h1>";
                 include 'phpscript/mainpagestories.php';
                 
-                echo"<a href='categorypage.php?category=mobileTablet&name=Mobile/Tablet'><h1 class='recent'>Mobile\Tablet</h1></a>";
+                echo"<a href='categorypage.php?category={mobileTablet}&name=Mobile/Tablet'><h1 class='recent'>Mobile\Tablet</h1></a>";
                 echo "<ul id='scroller'>";
                 include 'phpscript/mainpagemobile-tablet.php';
                 echo "</ul>";
                 
-                echo"<a href='categorypage.php?category=business&name=Business'><h1 class='recent'>Business</h1></a>";
+                echo"<a href='categorypage.php?category={business}&name=Business'><h1 class='recent'>Business</h1></a>";
                 echo "<ul id='scroller2'>";
                 include 'phpscript/mainpagebusiness.php';
                 echo "</ul>";
                 
-                echo"<a href='categorypage.php?category=hardware&name=Hardware'><h1 class='recent'>Hardware</h1></a>";
+                echo"<a href='categorypage.php?category={hardware}&name=Hardware'><h1 class='recent'>Hardware</h1></a>";
                 echo "<ul id='scroller3'>";
                 include 'phpscript/mainpagegaming.php';
                 echo "</ul>";    

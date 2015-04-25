@@ -29,6 +29,7 @@ if ($_POST) {
        header("Location: http://users.aber.ac.uk/stm26/TECH/signup.php?emailinvalid=True"); 
     }
     else{
+
     if ($popular === 'True') {
         
     } else {
@@ -82,7 +83,8 @@ if ($_POST) {
         $query = "INSERT INTO users (email,password,firstname,lastname,country,popular,mobiletablet,business,hardware,software,wearables,tvs,gaming,socialmedia) 
                 VALUES ('$email2','$password_hash','$firstname2','$lastname2','$country2','$popular','$mobiletablet','$business','$hardware','$software','$wearables','$tvs','$gaming','$socialmedia')";
         $result = pg_query($query);
-        header("Location: http://users.aber.ac.uk/stm26/TECH/index.php");
+       
+        header("Location: http://users.aber.ac.uk/stm26/TECH/login.php");
    
 }
 }

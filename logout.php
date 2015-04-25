@@ -18,7 +18,7 @@ session_destroy();
     <body>
         <header>
             <?php
-                include 'nav.php';
+            include 'nav.php';
             ?>
         </header>
         <section class="content">
@@ -27,6 +27,14 @@ session_destroy();
                 <br>
                 <br>
                 <p>You have successfully logged out of your TECH account. If this was a mistake please log back in <a href="login.php" class="normal_link">here</a>.</p>
+                <script type="text/javascript">
+                    function Redirect()
+                    {
+                        window.location = "http://users.aber.ac.uk/stm26/TECH/index.php";
+                    }
+
+                    setTimeout('Redirect()', 30000);
+                </script>  
             </section>
         </section>
         <footer>

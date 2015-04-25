@@ -32,7 +32,11 @@
             <?php
                 include 'phpscript/storycontent.php';
             ?>
-                <br><br><br>
+                <br>
+                <section class="viewcounter">
+                    <p>Views: <?php echo $views;?></p>
+                 </section>
+                <br><br>
                 <h2>Comments</h2>
             </section>
             
