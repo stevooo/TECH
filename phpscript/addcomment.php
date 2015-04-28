@@ -12,7 +12,7 @@ while($g = pg_fetch_array($userres2)){
 if ($_POST){
     
     $comment = $_POST['comment'];
-    $comment2 = pg_escape_string($comment2);
+    $comment2 = pg_escape_string($comment);
     $id = $_GET["storyID"] ;
     $id2 = pg_escape_string($id);
     $comquery = "INSERT INTO comments (storyid,userid,commentcontent) 

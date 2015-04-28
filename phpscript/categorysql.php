@@ -4,7 +4,7 @@ $category = $_GET["category"] ;
 
 
 $categoryconn = pg_connect("host=db.dcs.aber.ac.uk dbname=cs399_14_15_stm26 user=stm26 password=stephen19");
-$categorysql = "SELECT * FROM stories WHERE category ='$category' OR category2 ='$category' ORDER BY datepublished DESC";
+$categorysql = "SELECT * FROM stories WHERE category ='$category' OR category2 ='$category' ORDER BY datepublished DESC LIMIT 30";
 $categoryres = pg_query($categoryconn,$categorysql);
 
 while($d = pg_fetch_array($categoryres)){
@@ -16,10 +16,13 @@ while($d = pg_fetch_array($categoryres)){
 	$headline2 = str_replace('"}',"",$headline);
         $headline3 = str_replace("\u2019",'&#8217', $headline2);
         $headline4 = str_replace("’",'&rsquo;', $headline3);
+        $headline5 = str_replace("�",'&nbsp;', $headline4);
+        $headline6 = str_replace("—",'&#8211;', $headline5);
+        $headline6 = str_replace("‘",'&#226;', $headline5);
 			
     echo "<a href='http://users.aber.ac.uk/stm26/TECH/story.php?storyID=".$d['storyid']."'>
           <img class='cstoryimg' id='".$d['storyid']."' src='".$image2."'/></a>";
-    echo "<h2><a class='headline' href='http://users.aber.ac.uk/stm26/TECH/story.php?storyID=".$d['storyid']."'>".$headline4."</a></h2>";
+    echo "<h2><a class='headline' href='http://users.aber.ac.uk/stm26/TECH/story.php?storyID=".$d['storyid']."'>".$headline6."</a></h2>";
     echo "</section>";
 }
 }

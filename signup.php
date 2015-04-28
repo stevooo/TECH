@@ -79,7 +79,7 @@ session_start();
                     <br>
                     <hr>
                     <br>
-                    <p class="terms"><input type="checkbox" name="termsandconditions" value="True">I have read and accepted the terms and conditions of TECH.</p> 
+                    
                     <input name="submit" type="submit" value="Sign up" class="submit">
                 </form>
                 <script type="text/javascript">
