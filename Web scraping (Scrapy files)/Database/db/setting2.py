@@ -15,11 +15,11 @@ NEWSPIDER_MODULE = 'db.spiders'
 
 DATABASE = {
 	'drivername': 'postgresql',
-	'host': 'db.dcs.aber.ac.uk',
-	'port': '5432',
-	'username': 'stm26',
+	'host': '*************',
+	'port': '***********',
+	'username': '*********',
 	'password': '**********',
-	'database': 'cs399_14_15_stm26'
+	'database': '************'
 }
 ITEM_PIPELINES = {
 	'db.pipelines.DbPipeline':300,
